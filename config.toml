@@ -53,7 +53,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
 [Twitch]
 enable-magisk-update = true
 build-mode = "module"
-version = "latest"
+version = "beta"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
 
 [TikTok]
