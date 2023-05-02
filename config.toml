@@ -7,6 +7,8 @@ build-mindetach-module = true
 
 [YouTube]
 enabled = true
+include-stock = false
+enable-magisk-update = true
 build-mode = "module"                                                   # 'both', 'apk' or 'module'
 excluded-patches = ""                                                 # space-seperated patches to exclude (multiline strings are not supported)
 included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
@@ -51,6 +53,8 @@ version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
 
 [Twitch]
+enabled = true
+include-stock = false
 enable-magisk-update = true
 build-mode = "module"
 version = "latest"
