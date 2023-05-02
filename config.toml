@@ -54,8 +54,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
 enable-magisk-update = true
 build-mode = "module"
 version = "beta"
-arch = "arm64-v8a"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
+uptodown-dlurl = "https://twitch.en.uptodown.com/android"
 
 [TikTok]
 enabled = false
