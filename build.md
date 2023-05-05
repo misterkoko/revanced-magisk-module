@@ -1,4 +1,4 @@
-CLI: revanced-cli-2.21.0-all.jar  
+CLI: revanced-cli-2.22.0-all.jar  
 Integrations: revanced-integrations-0.107.0.apk  
 Patches: revanced-patches-2.173.0.jar  
 
@@ -14,7 +14,7 @@ Patches: revanced-patches-2.173.0.jar
   
 **App Versions:**  
 YouTube: 18.16.39  
-Twitch: 15.1.0  
+Twitch: 15.1.1  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 

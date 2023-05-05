@@ -1,6 +1,6 @@
 {
-  "version": "v15.1.0",
-  "versionCode": 1,
-  "zipUrl": "https://github.com/misterkoko/revanced-magisk-module/releases/download/1/twitch-revanced-magisk-v15.1.0-all.zip",
+  "version": "v15.1.1",
+  "versionCode": 2,
+  "zipUrl": "https://github.com/misterkoko/revanced-magisk-module/releases/download/2/twitch-revanced-magisk-v15.1.1-all.zip",
   "changelog": "https://raw.githubusercontent.com/misterkoko/revanced-magisk-module/update/build.md"
 }
