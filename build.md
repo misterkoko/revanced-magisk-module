@@ -1,6 +1,6 @@
-YouTube: 18.18.34  
+YouTube: 18.16.37  
 YouTube-Extended: 18.17.43  
-Twitch: 15.1.1  
+Twitch: 14.6.1  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
