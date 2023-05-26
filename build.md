@@ -5,6 +5,8 @@ Music (arm-v7a): 5.39.52
 Music-Extended (arm64-v8a): 6.03.51  
 Music-Extended (arm-v7a): 6.03.51  
 Twitch: 14.6.1  
+Reddit: 2023.20.1  
+Messenger: 410.0.0.17.85  
 Spotify: 8.8.36.522  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
