@@ -35,7 +35,7 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.y
 [Music]
 build-mode = "apk"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-arch = "apk"
+apkmirror-arch = "both"
 
 [Twitter]
 enabled = false
