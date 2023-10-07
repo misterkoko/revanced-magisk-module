@@ -5,7 +5,7 @@ enable-magisk-update = true   # set this to false if you do not want to receive 
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-build-mode = "both"                                                   # 'both', 'apk' or 'module'
+build-mode = "apk"                                                   # 'both', 'apk' or 'module'
 excluded-patches = ""                                                 # space-seperated patches to exclude (multiline strings are not supported)
 included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
 version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
@@ -18,9 +18,9 @@ patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
-build-mode = "both"
+build-mode = "apk"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-arch = "both"
+apkmirror-arch = "apk"
 
 [YouTube-Extended]
 enabled = false
@@ -29,19 +29,21 @@ patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
-build-mode = "both"
+build-mode = "apk"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
-build-mode = "both"
+build-mode = "apk"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-arch = "both"
+apkmirror-arch = "apk"
 
 [Twitter]
+enabled = false
 build-mode = "apk"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 
 [Twitch]
+enabled = true
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/tv.twitch.android.app"
 
 [TikTok]
@@ -49,6 +51,7 @@ enabled = false
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.zhiliaoapp.musically"
 
 [Reddit]
+enabled = false
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
 
 [Lightroom]
@@ -57,12 +60,12 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom/"
 apkmirror-arch = "arm64-v8a + x86_64"
 
 [Messenger]
-enabled = false
+enabled = true
 apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
 apkmirror-arch = "arm64-v8a"
 
 [Spotify]
-enabled = false
+enabled = true
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 
 [Citra]
