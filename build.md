@@ -4,7 +4,6 @@ YouTube: 18.38.44
 Music-Extended (arm64-v8a): 6.23.54  
 Music-Extended (arm-v7a): 6.23.54  
 YouTube-Extended: 18.40.34  
-Messenger: 431.1.0.35.116  
 Spotify: 8.8.80.599  
 Twitch: 16.1.0  
 
