@@ -46,6 +46,7 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/tv.twitch.android.app"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
+version = "latest"
 
 [TikTok]
 enabled = false
