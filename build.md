@@ -1,11 +1,12 @@
-Music (arm-v7a): 6.28.52  
-Music-Extended (arm-v7a): 6.28.52  
 Music (arm64-v8a): 6.28.52  
 Music-Extended (arm64-v8a): 6.28.52  
-Twitch: 17.1.0  
-Spotify: 8.8.88.397  
 YouTube: 18.45.41  
 YouTube-Extended: 18.45.41  
+Twitch: 17.1.0  
+Messenger: 435.0.0.32.108  
+Spotify: 8.8.88.397  
+Music (arm-v7a): 6.28.52  
+Music-Extended (arm-v7a): 6.28.52  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube and YT Music  
 
