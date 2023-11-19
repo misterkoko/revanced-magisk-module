@@ -63,8 +63,7 @@ apkmirror-arch = "arm64-v8a + x86_64"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
 apkmirror-arch = "arm64-v8a"
 version = "auto"
-apkmirror-dpi = "nodpi"
-
+apkmirror-dpi = "360-480dpi"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
