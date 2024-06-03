@@ -1,6 +1,6 @@
 {
-  "version": "v7.03.51",
-  "versionCode": 90,
-  "zipUrl": "https://github.com/misterkoko/revanced-magisk-module/releases/download/90/music-revanced-magisk-v7.03.51-arm64-v8a.zip",
+  "version": "v7.03.52",
+  "versionCode": 91,
+  "zipUrl": "https://github.com/misterkoko/revanced-magisk-module/releases/download/91/music-revanced-magisk-v7.03.52-arm64-v8a.zip",
   "changelog": "https://raw.githubusercontent.com/misterkoko/revanced-magisk-module/update/build.md"
 }
