@@ -1,6 +1,6 @@
 {
-  "version": "v20.13.41 (patches 5.34.0)",
-  "versionCode": 159,
-  "zipUrl": "https://github.com/misterkoko/revanced-magisk-module/releases/download/159/youtube-revanced-magisk-v20.13.41-all.zip",
+  "version": "v20.13.41 (patches 5.35.0)",
+  "versionCode": 160,
+  "zipUrl": "https://github.com/misterkoko/revanced-magisk-module/releases/download/160/youtube-revanced-magisk-v20.13.41-all.zip",
   "changelog": "https://raw.githubusercontent.com/misterkoko/revanced-magisk-module/update/build.md"
 }
