@@ -358,7 +358,99 @@ get_apkmirror_vers() {
 		echo "$vers"
 	fi
 }
-get_apkmirror_pkg_name() { sed -n 's;.*id=\(.*\)" class="accent_color.*;\1;p' <<<"$__APKMIRROR_RESP__"; }
+# Updated APKMirror functions for utils.sh
+
+get_apkmirror_pkg_name() {
+	# Try multiple patterns for package name extraction
+	local pkg_name=""
+	
+	# Original pattern
+	pkg_name=$(sed -n 's;.*id=\(.*\)" class="accent_color.*;\1;p' <<<"$__APKMIRROR_RESP__")
+	
+	if [ -z "$pkg_name" ]; then
+		# Try pattern with different class names
+		pkg_name=$(sed -n 's;.*id=\([^"]*\)".*class="[^"]*accent[^"]*".*;\1;p' <<<"$__APKMIRROR_RESP__")
+	fi
+	
+	if [ -z "$pkg_name" ]; then
+		# Try extracting from app info section
+		pkg_name=$(echo "$__APKMIRROR_RESP__" | grep -o 'id=[^"]*' | head -1 | cut -d'=' -f2)
+	fi
+	
+	if [ -z "$pkg_name" ]; then
+		# Try extracting from meta tags or structured data
+		pkg_name=$(echo "$__APKMIRROR_RESP__" | grep -o 'com\.[a-zA-Z0-9.]*' | grep -E '^com\.[a-zA-Z0-9]+\.[a-zA-Z0-9.]+' | head -1)
+	fi
+	
+	if [ -z "$pkg_name" ]; then
+		# Try pattern matching for Facebook apps specifically
+		pkg_name=$(echo "$__APKMIRROR_RESP__" | grep -o 'com\.facebook\.[a-zA-Z0-9]*' | head -1)
+	fi
+	
+	echo "$pkg_name"
+}
+
+get_apkmirror_resp() {
+	__APKMIRROR_RESP__=$(req "${1}" -)
+	__APKMIRROR_CAT__="${1##*/}"
+	
+	# Debug output (remove after testing)
+	if [ -z "$(get_apkmirror_pkg_name)" ]; then
+		echo "DEBUG: Could not extract package name from APKMirror page" >&2
+		echo "DEBUG: Looking for package patterns..." >&2
+		echo "$__APKMIRROR_RESP__" | grep -o 'com\.[a-zA-Z0-9.]*' | head -5 >&2
+		echo "DEBUG: Looking for id patterns..." >&2
+		echo "$__APKMIRROR_RESP__" | grep -o 'id=[^"]*' | head -5 >&2
+	fi
+}
+
+# Alternative function specifically for Facebook Messenger
+get_messenger_pkg_name() {
+	# For Messenger specifically, we know it should be com.facebook.orca
+	local pkg_name=""
+	
+	# First try the standard extraction
+	pkg_name=$(get_apkmirror_pkg_name)
+	
+	# If that fails and we're dealing with messenger, use known package name
+	if [ -z "$pkg_name" ]; then
+		# Check if this is likely a messenger page
+		if echo "$__APKMIRROR_RESP__" | grep -qi "messenger\|facebook.*message"; then
+			pkg_name="com.facebook.orca"
+		fi
+	fi
+	
+	echo "$pkg_name"
+}
+
+# Also modify the build_rv function to handle known package names
+# Add this function to handle known problematic apps
+get_known_pkg_name() {
+	local app_name="$1" url="$2"
+	case "${app_name,,}" in
+		"messenger")
+			if [[ "$url" == *"facebook"* ]]; then
+				echo "com.facebook.orca"
+				return 0
+			fi
+			;;
+		"facebook")
+			if [[ "$url" == *"facebook"* ]] && [[ "$url" != *"messenger"* ]]; then
+				echo "com.facebook.katana"
+				return 0
+			fi
+			;;
+		"whatsapp")
+			echo "com.whatsapp"
+			return 0
+			;;
+		"instagram")
+			echo "com.instagram.android"
+			return 0
+			;;
+	esac
+	return 1
+}
 get_apkmirror_resp() {
 	__APKMIRROR_RESP__=$(req "${1}" -)
 	__APKMIRROR_CAT__="${1##*/}"
