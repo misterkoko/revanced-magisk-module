@@ -74,7 +74,7 @@ included-patches = "'SIM spoof'"
 
 [Messenger]
 enabled = true
-https://www.apkmirror.com/apk/facebook-2/facebook/
+apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/facebook"
 uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
 arch = "both"
 
