@@ -1,8 +1,8 @@
+Messenger: 550.0.0.45.63  
 Music (arm64-v8a): 8.10.52  
 Music (arm-v7a): 8.10.52  
 Music-Morphe (arm64-v8a): 8.40.54  
 Music-Morphe (arm-v7a): 8.40.54  
-Twitch: 16.9.1  
 YouTube: 20.14.43  
 YouTube-Morphe: 20.40.45  
 
