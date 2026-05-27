@@ -1,4 +1,4 @@
-Messenger: 561.0.0.55.76  
+Messenger: 562.0.0.53.83  
 Music-Morphe (arm64-v8a): 8.47.56  
 Music-Morphe (arm-v7a): 8.47.56  
 YouTube-Morphe: 20.47.62  
